@@ -49,13 +49,13 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server "52.195.236.252",
-  user: "ec2-user",
-  roles: %w{web db app},
-  ssh_options: {
-    user: "ec2-user", # overrides user setting above
-    keys: %w(~/Downloads/tsuru_tokyo_sample.pem),
-    forward_agent: false,
-    auth_methods: %w(publickey password)
-    # password: "please use keys"
-  }
+# server "example.com",
+#   user: "user_name",
+#   roles: %w{web app},
+#   ssh_options: {
+#     user: "user_name", # overrides user setting above
+#     keys: %w(/home/user_name/.ssh/id_rsa),
+#     forward_agent: false,
+#     auth_methods: %w(publickey password)
+#     # password: "please use keys"
+#   }
