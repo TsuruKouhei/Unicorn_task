@@ -51,7 +51,7 @@
 # ------------------------------------
 server "52.195.236.252",
   user: "ec2-user",
-  roles: %w{web app},
+  roles: %w{web db app},
   ssh_options: {
     user: "ec2-user", # overrides user setting above
     keys: %w(~/Downloads/tsuru_tokyo_sample.pem),
