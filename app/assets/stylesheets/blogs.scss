@@ -1,3 +1,31 @@
 // Place all the styles related to the blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.content-wrapper {
+  display: flex; /* Flexboxを有効化 */
+  justify-content: space-around; /* 要素間に均等なスペースを設定 */
+  align-items: center; /* アイテムを垂直方向の中央に配置 */
+  gap: 20px; /* アイテム間の間隔を設定 */
+  width: 100%; /* コンテナの幅を画面いっぱいに設定 */
+}
+
+.blog-images img {
+  max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+  height: auto; /* 高さを自動で調整し、アスペクト比を維持 */
+}
+
+/* .blog-imagesのスタイル定義に誤りがあったため、修正します */
+.blog-images {
+  /* widthとheightの値に引用符は不要です */
+  max-width: 600px; /* コンテナの最大幅を設定 */
+  height: auto; /* 高さを自動で調整 */
+  margin: 0 auto; /* 上下のマージンを0にし、左右のマージンを自動で中央揃えに */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.fa-seedling:before
+{
+color: greenyellow ;
+}
